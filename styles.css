@@ -1,0 +1,258 @@
+.h0 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 4.5em;
+  margin-left: 10%;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+p, ul {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.05em;
+  line-height: 1.8em;
+  list-style: none;
+  letter-spacing: 0.24px;
+}
+
+ul {
+  display: inline;
+}
+
+p {
+  padding-right: 15%;
+}
+
+hr {
+  background-color: #CBCFD3;
+  height: 3px;
+  width: 40px;
+  border: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.color1 {
+  color: #CBCFD3;
+}
+
+.color2 {
+  color: #616161;
+}
+
+.colorNeugelb {
+  color: #F73F24;
+  font-weight: 500;
+}
+
+.colorCommerzbank {
+  color: #ffcc33;
+  font-weight: 500;
+}
+
+.colorPixelPink{
+  color: #e6004e;
+  font-weight: 500;
+}
+
+.colorDeinWunschmotiv{
+  color: #3DA7B8;
+  font-weight: 500;
+}
+
+
+.hideme
+{
+    opacity:0;
+}
+/* PROJECT STYLES */
+
+.projectsSection {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.projectLeft {
+  float: left;
+  width: 49%;
+  margin-right: 1%;
+  margin-bottom: 5em;
+  transition: all .5s ease;
+  padding-bottom: 6%;
+}
+
+.projectRight {
+  float: left;
+  width: 49%;
+  margin-left: 1%;
+  margin-bottom: 5em;
+  transition: all .5s ease;
+  padding-bottom: 6%;
+}
+
+.projectTitle {
+  float: left;
+  width: 48%;
+  padding-left: 2%;
+  padding-top: 1%;
+}
+
+.projectMeta {
+  float: left;
+  width: 50%;
+}
+
+.projectLeft:hover, .projectRight:hover,
+.projectLeft:focus, .projectRight:focus  {
+  box-shadow: 2px 8px 20px 0 rgba(31,32,68,.19);
+  transform: scale(1.01, 1.01);
+  transition: all .5s ease;
+}
+
+.project img{
+  width: 100%;
+}
+
+
+.img-responsive {
+    background: url("img/me.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 2em;
+    min-height: 65vh;
+}
+
+.startSection {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.wrapper {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.wrapper > div {
+  border-radius: 3px;
+  flex: 1;
+}
+
+.socialMedia {
+  padding-top: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2em;
+  padding-right: .2em;
+  padding-left: .2em;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Smartphones (portrait) ----------- */
+@media (max-width : 980px) {
+
+  p {
+    padding-right: 0%;
+  }
+
+  .projectLeft {
+    float: left;
+    width: 100%;
+  }
+
+  .projectRight {
+    float: left;
+    width: 100%;
+  }
+
+  .projectTitle {
+    float: left;
+    width: 98%;
+    padding-left: 2%;
+  }
+
+  .projectMeta {
+    float: left;
+    width: 98%;
+    padding-left: 2%;
+    display: inline;
+    padding-bottom: 16%;
+    margin-top: -3%;
+  }
+
+  .wrapper {
+    display: inline-block;
+  }
+
+  .wrapper > div {
+    border-radius: 3px;
+    flex: 1;
+    width: 100%;
+  }
+
+  .socialMedia {
+    max-width: 100%;
+  }
+
+  .img-responsive {
+    padding-top: 5%;
+    min-height: 45vh;
+    margin-left: 0em;
+    width: 100%;
+  }
+}
