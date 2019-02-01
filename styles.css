@@ -118,6 +118,7 @@ a {
   box-shadow: 2px 8px 20px 0 rgba(31,32,68,.19);
   transform: scale(1.01, 1.01);
   transition: all .5s ease;
+  border-radius: 8px;
 }
 
 .project img{
