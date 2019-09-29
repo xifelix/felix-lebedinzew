@@ -101,7 +101,7 @@ a {
   margin-right: 1%;
   margin-bottom: 5em;
   transition: all .5s ease;
-  padding-bottom: 3%;
+  /* padding-bottom: 3%; */
 }
 
 .projectRight {
