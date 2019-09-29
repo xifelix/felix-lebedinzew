@@ -56,6 +56,11 @@ a {
   font-weight: 500;
 }
 
+.colorLBoro{
+  color: #B70062;
+  font-weight: 500;
+}
+
 .colorCommerzbank {
   color: #ffcc33;
   font-weight: 500;
@@ -83,13 +88,20 @@ a {
   padding-right: 10%;
 }
 
+.projectHighlight {
+  width: 100%;
+  margin-bottom: 5em;
+  transition: all .5s ease;
+  padding-bottom: 19%;
+}
+
 .projectLeft {
   float: left;
   width: 49%;
   margin-right: 1%;
   margin-bottom: 5em;
   transition: all .5s ease;
-  padding-bottom: 6%;
+  padding-bottom: 3%;
 }
 
 .projectRight {
@@ -111,6 +123,13 @@ a {
 .projectMeta {
   float: left;
   width: 50%;
+}
+
+.projectHighlight:hover, .projectHighlight:focus {
+  box-shadow: 2px 8px 20px 0 rgba(31,32,68,.19);
+  transform: scale(1.01, 1.01);
+  transition: all .5s ease;
+  border-radius: 8px;
 }
 
 .projectLeft:hover, .projectRight:hover,
@@ -209,6 +228,11 @@ a {
 
   p {
     padding-right: 0%;
+  }
+
+  .projectHighlight {
+    float: left;
+    width: 100%;
   }
 
   .projectLeft {
