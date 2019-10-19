@@ -53,9 +53,25 @@
               </div>
           </div></a>
 
+          <!-- Fuelcast -->
+          <a href="https://www.fuelcast.co" target="_blank">
+            <div class="projectLeft">
+                <img class="hideme" src="img/fuelcast.jpg" alt="fuelcast mobile app">
+                <div class="projectTitle hideme">
+                    <h1>Fuelcast Mobile App ↗</br> <span class="color1">2019</span> </h1>
+                </div>
+                <div class="projectMeta hideme">
+                  <ul class="category color2">
+                    <li>Product UX and UI</li>
+                    <li>Consulting Founders-Team</li>
+                    <li>Pitch-Deck Design</li>
+                  </ul>
+                </div>
+            </div></a>
+
           <!-- QVSTA -->
           <a href="http://qvsta.com" target="_blank">
-          <div class="projectLeft">
+          <div class="projectRight">
               <img class="hideme" src="img/qvsta.jpg" alt="QVSTA Model Booking Platform Website">
               <div class="projectTitle hideme">
                   <h1>Qvsta Model Booking ↗</br> <span class="color1">2018</span> </h1>
@@ -72,7 +88,7 @@
 
           <!-- ThisIsLisa X -->
           <a href="http://thisislisax.com" target="_blank">
-          <div class="projectRight">
+          <div class="projectLeft">
             <img class="hideme" src="img/thisislisax.jpg" alt="ThisIsLisa X Blog Website">
               <div class="projectTitle hideme">
                   <h1>ThisIsLisa X ↗</br> <span class="color1">2017</span> </h1>
@@ -88,7 +104,7 @@
 
           <!-- Die-Masterarbeit.de -->
           <a href="https://www.die-masterarbeit.de" target="_blank">
-          <div class="projectLeft">
+          <div class="projectRight">
               <img class="hideme" src="img/die-masterarbeit.jpg" alt="Die-Masterarbeit.de website">
               <div class="projectTitle hideme">
                   <h1>Die-Masterarbeit.de ↗</br> <span class="color1">2017</span> </h1>
@@ -104,7 +120,7 @@
 
           <!-- SkyVIV -->
           <a href="https://www.behance.net/gallery/45592717/SkyVIV-Drone-Imagery-Company" target="_blank">
-          <div class="projectRight">
+          <div class="projectLeft">
               <img class="hideme" src="img/skyviv.jpg" alt="sky visual imaging venture bangkok website">
               <div class="projectTitle hideme">
                   <h1>Skyviv ↗</br> <span class="color1">2017 (Bangkok)</span> </h1>
@@ -120,7 +136,7 @@
 
           <!-- DeinWunschmotiv -->
           <a href="https://www.deinwunschmotiv.de" target="_blank">
-          <div class="projectLeft">
+          <div class="projectRight">
               <img class="hideme" src="img/deinwunschmotiv.jpg" alt="DeinWunschmotiv Startup Website">
               <div class="projectTitle hideme">
                   <h1>DeinWunschmotiv ↗</br> <span class="color1">2016 – 2018</span> </h1>
@@ -136,28 +152,28 @@
           </div></a>
 
           <!-- Your Project is next? -->
-          <a href="mailto:hi@felix-lebedinzew.com" target="_blank">
+          <!-- <a href="mailto:hi@felix-lebedinzew.com" target="_blank">
             <div class="projectRight">
                 <img class="hideme" src="img/project.jpg" alt="Ihr Projekt ist das nächste?">
                 <div class="projectTitle hideme">
                     <h1>Your project next? </br> <span class="color1">Hit me up now!</span> </h1>
                 </div>
                 <div class="projectMeta hideme">
-                  <!-- <ul class="category color2">
+                  <ul class="category color2">
                     <li>entrepreneurship</li>
                     <li>service design</li>
                     <li>branding (ui / ux)</li>
                     <li>development</li>
-                  </ul> -->
+                  </ul>
                 </div>
-            </div></a>
+            </div></a> -->
 
       </div>
 
     </section>
 
     <!-- Articles / News Section -->
-    <div class="wrapper hideme newsSection">
+    <div class="wrapper newsSection">
       <div>
         <h1 class="color1"> Articles  /</br> publications</h1>
         <hr align="left">
@@ -178,7 +194,7 @@
     
 
     <!-- Sketch Freebies -->
-    <div class="wrapper hideme newsSection">
+    <div class="wrapper newsSection">
       <div>
         <h1 class="color1"> Sketch </br> Freebies</h1>
         <hr align="left">
@@ -196,7 +212,7 @@
 
 
     <!-- Social Media -->
-    <div class="socialMedia hideme ">
+    <div class="socialMedia  ">
       <a href="mailto:hi@felix-lebedinzew.com"><h1 class="hvr-sweep-to-right color2">💌 Email</h1></a>
       <a href="https://www.linkedin.com/in/felix-lebedinzew-8358b8115/" target="_blank"><h1 class="hvr-sweep-to-right color2">💼 Linkedin</h1></a>
       <a href="https://dribbble.com/felixlebedinzew" target="_blank"><h1 class="hvr-sweep-to-right color2">🏀 Dribbble</h1></a>
@@ -218,12 +234,13 @@
             /* Check the location of each desired element */
             $('.hideme').each( function(i){
 
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                /* old line that fades the elemnts in differently, needed to be changed after commerzbank section is so big                 var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+*/
+                var bottom_of_object = $(this).offset().top;
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
 
                 /* If the object is completely visible in the window, fade it it */
                 if( bottom_of_window > bottom_of_object ){
-
                     $(this).animate({'opacity':'1'},500);
 
                 }
